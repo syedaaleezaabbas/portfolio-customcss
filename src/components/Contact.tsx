@@ -11,8 +11,7 @@ const Contact = () => {
       <div className={styles.contactLeft}>
         <h2 data-aos="fade-up">Let's Work Together</h2>
         <p data-aos="fade-up">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          voluptatum illum magni similique velit.
+        Let's connect and explore exciting opportunities together.
         </p>
 
         <div className={styles.contactInfo} data-aos="fade-up">

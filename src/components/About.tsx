@@ -19,9 +19,9 @@ const About = () => {
       <div className={styles.textSection}>
         <h1 data-aos="fade-up">About Me</h1>
         <p data-aos="fade-up">
-          Hello! I'm Aleeza, a passionate Frontend Web Developer dedicated to building clean, user-friendly websites. I'm committed to learning, growing, and mastering the art of crafting seamless digital experiences. My goal is to combine creativity with technical skills to create responsive and visually appealing websites that provide exceptional user experiences.
+          Hello! {"I'm"} Aleeza, a passionate Frontend Web Developer dedicated to building clean, user-friendly websites. {"I'm"} committed to learning, growing, and mastering the art of crafting seamless digital experiences. My goal is to combine creativity with technical skills to create responsive and visually appealing websites that provide exceptional user experiences.
 
-          I'm constantly exploring new technologies and techniques to improve my craft. Whether building from scratch or improving an existing design, I'm driven to bring fresh ideas to life through clean code and thoughtful design.
+          {"I'm"} constantly exploring new technologies and techniques to improve my craft. Whether building from scratch or improving an existing design, {"I'm"} driven to bring fresh ideas to life through clean code and thoughtful design.
         </p>
       </div>
     </div>

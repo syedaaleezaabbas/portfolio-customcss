@@ -1,0 +1,127 @@
+.projects {
+  background-color: #000000;
+  padding: 8rem 4rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #2e004f, #4b0082, #6a0dad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.projectCard {
+  background-color: #111;
+  flex: 0 1 calc(33.333% - 1.5rem);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 4rem;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #6a0dad;
+}
+
+.projectDescription {
+  color: #ffffff;
+  margin: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #6a0dad;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.link:hover {
+  color: #6a0dad;
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .projects {
+    padding: 6rem 3rem;
+  }
+
+  .projectCard {
+    flex: 0 1 calc(50% - 1.5rem);
+    margin-bottom: 3rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .projects {
+    padding: 6rem 2rem;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+  }
+
+  .projectCard {
+    flex: 0 1 calc(100% - 1.5rem);
+    margin-bottom: 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+}

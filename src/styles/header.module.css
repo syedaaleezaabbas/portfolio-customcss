@@ -1,0 +1,91 @@
+/* Header styling */
+.header {
+  background: linear-gradient(to right, #2e004f, #4b0082, #6a0dad);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.25);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Logo Section */
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Navigation Section */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+}
+
+.navItem {
+  margin-right: 2rem;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.navItem a:hover {
+  color: #c0c0c0;
+}
+
+/* Responsive Styling */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to right, #2e004f, #4b0082, #6a0dad);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    z-index: 1;
+  }
+
+  .nav.navOpen {
+    transform: translateY(0);
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .navItem {
+    margin: 0;
+  }
+}

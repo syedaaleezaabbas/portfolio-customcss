@@ -1,0 +1,137 @@
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 4rem;
+  max-width: 100%;
+  background-color: #000000;
+}
+
+.contactLeft {
+  width: 45%;
+  margin: auto 0;
+}
+
+.contactLeft h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.contactLeft p {
+  margin: 1.5rem 0;
+  line-height: 1.8;
+  color: white;
+}
+
+.contactDetail {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.contactDetail .icons {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  color: #6a0dad;
+}
+
+.contactRight {
+  width: 45%;
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contactRight h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.form textarea {
+  margin: 0 10px;
+  height: 200px;
+  margin-top: 1rem;
+}
+
+.form button {
+  padding: 10px 50px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #2e004f, #4b0082, #6a0dad);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .contactLeft,
+  .contactRight {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    flex-direction: column;
+    padding: 6rem 1rem;
+  }
+  .contactLeft,
+  .contactRight {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contactLeft h2,
+  .contactRight h2 {
+    font-size: 2rem;
+  }
+
+  .contactLeft p {
+    font-size: 1rem;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form textarea {
+    margin: 0;
+  }
+
+  .form button {
+    padding: 10px 30px;
+  }
+}

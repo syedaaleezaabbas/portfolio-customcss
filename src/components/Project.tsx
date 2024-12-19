@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/Projects.module.css';
+import styles from '@/styles/projects.module.css';
 import Image from 'next/image';
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa6";

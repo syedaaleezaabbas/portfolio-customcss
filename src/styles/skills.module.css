@@ -47,7 +47,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .skillsGrid {
     grid-template-columns: repeat(3, 1fr); 
   }
@@ -61,36 +61,22 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .skillsGrid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-
-  .skillsContainer h1 {
-    font-size: 1.8rem;
-  }
-
-  .skillsContainer p {
-    font-size: 1rem; 
-  }
-}
-
-@media (max-width: 600px) {
-  .skillsGrid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(2, 1fr); ; 
     gap: 30px; 
   }
 
   .skillsContainer {
-    padding: 4rem 2rem; 
+    padding: 6rem 2rem; 
   }
 
   .skillsContainer h1 {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
   }
 
   .skillsContainer p {
-    font-size: 0.9rem; 
+    font-size: 1rem; 
   }
 
   .icon {

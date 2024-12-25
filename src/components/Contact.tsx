@@ -26,7 +26,7 @@ const Contact = () => {
       </div>
 
       {/* Right Section */}
-      <div className={styles.contactRight}>
+      <div className={styles.contactRight} data-aos="fade-up">
         <h2>Contact Me</h2>
         <form className={styles.form}>
           <div className={styles.inputGroup}>

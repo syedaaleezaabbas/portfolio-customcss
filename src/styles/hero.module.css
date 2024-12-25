@@ -48,12 +48,70 @@
   font-weight: bold;
 }
 
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+.socialLinks a {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.socialLinks a:hover {
+  transform: scale(1.1);
+  color: #6a0dad;
+}
 .imageSection img {
   border: 5px solid #6a0dad;
   border-radius: 50%;
 }
 
 /* Responsive Styles */
+/* Responsive Styles for 1024px */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 8rem 3rem;
+  }
+
+  .textSection {
+    text-align: left;
+    padding: 0;
+  }
+
+  .textSection h1 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+  }
+
+  .textSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .textSection p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactButton {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.8rem;
+  }
+
+  .socialLinks {
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .imageSection img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 6rem 0.5rem;

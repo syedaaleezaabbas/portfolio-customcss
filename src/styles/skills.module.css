@@ -1,20 +1,28 @@
 .skillsContainer {
-  padding: 50px;
   text-align: center;
+  padding: 8rem 3rem;
+  background-color: #000000;
 }
 
 .skillsContainer h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  color: #00bcd4;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #2e004f, #4b0082, #6a0dad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
 }
 
-.skillsIcons {
+.skillsContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  color: #ffffff;
+}
+
+.skillsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
 }
 
 .skill {
@@ -23,13 +31,73 @@
   align-items: center;
 }
 
-.skill {
-  width: 50px;
-  height: 50px;
+.icon {
+  font-size: 4rem;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: rotate(30deg);
 }
 
 .skill p {
-  color: #ccc;
   font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .skillsGrid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .skillsContainer h1 {
+    font-size: 2rem; 
+  }
+
+  .skillsContainer p {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 900px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .skillsContainer h1 {
+    font-size: 1.8rem;
+  }
+
+  .skillsContainer p {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  .skillsGrid {
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+  }
+
+  .skillsContainer {
+    padding: 4rem 2rem; 
+  }
+
+  .skillsContainer h1 {
+    font-size: 1.5rem; 
+  }
+
+  .skillsContainer p {
+    font-size: 0.9rem; 
+  }
+
+  .icon {
+    font-size: 3rem; 
+  }
+
+  .skill p {
+    font-size: 0.9rem; 
+  }
 }

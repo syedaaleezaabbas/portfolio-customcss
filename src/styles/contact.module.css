@@ -20,6 +20,7 @@
   margin: 1.5rem 0;
   line-height: 1.8;
   color: white;
+  font-size: 1.2rem;
 }
 
 .contactDetail {
@@ -92,6 +93,20 @@
   .contactLeft,
   .contactRight {
     width: 48%;
+  }
+  .inputGroup {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .form input,
+  .form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form textarea {
+    margin: 0;
   }
 }
 

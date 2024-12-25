@@ -33,6 +33,34 @@
 }
 
 /* Responsive Styles */
+/* Responsive Styles for 1024px */
+@media (max-width: 1024px) {
+  .about {
+    padding: 6rem 2rem;
+    gap: 2rem;
+  }
+
+  .textSection {
+    padding: 0;
+  }
+
+  .textSection h1 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+
+  .textSection p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  .imageSection img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .about {
     padding: 6rem 0.5rem;
